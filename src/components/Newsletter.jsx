@@ -1,6 +1,7 @@
 import { SendOutlined } from '@material-ui/icons';
 import React from 'react';
 import styled from 'styled-components';
+import { mobile } from '../responsive';
 const Container = styled.div`
   background-color: #fcf5f5;
   height: 60vh;
@@ -17,6 +18,7 @@ const Desc = styled.div`
   font-size: 24px;
   font-weight: 300;
   margin-bottom: 20px;
+  ${mobile({ textAlign: 'center' })}
 `;
 const InputContainer = styled.div`
   width: 50%;
@@ -25,6 +27,7 @@ const InputContainer = styled.div`
   display: flex;
   justify-content: space-between;
   border: solid 1px lightgray;
+  ${mobile({ width: '80%' })}
 `;
 const Input = styled.input`
   flex: 8;
